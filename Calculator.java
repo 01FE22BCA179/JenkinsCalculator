@@ -1,7 +1,7 @@
 /**
  * The Calculator class is used for performing mathematical calculations.
  */
-class Calculator {
+class Calculator extends ExtendedCalculator{
     /**
      * The function "addition" takes two float operands and returns their sum.
      * 
@@ -43,7 +43,15 @@ class Calculator {
     float division(float operand_1,float operand_2){
     return (operand_1/operand_2);
     }
-    
+    /**
+     * The function "square" takes a float number as input and returns the square of that number.
+     * 
+     * @param operand_1 A floating-point number that represents the operand to be squared.
+     * @return The square of the operand_1 value.
+     */
+    // float square(float operand_1){
+    // return(operand_1*operand_1);
+    // }
 
 
     public static void main(String[] args){
@@ -63,6 +71,20 @@ class Calculator {
         float div_result=calc.division(operand_1, operand_2);
         System.out.println("result is : "+div_result);
 
-        
+        // float square_result=calc.square(operand_1);
+        // System.out.println("result is : "+square_result);
+
+        float square_result=calc.square(operand_1);
+        System.out.println("Square of number is : "+square_result);
+
+        float cube_result=calc.cube(operand_1);
+        System.out.println("Cube of number is : "+cube_result);
+
+        // float modulo_result=calc.modulo(operand_1,operand_2);
+        // System.out.println("Modulo is : "+modulo_result);
+
+
+
+
     }
 }
